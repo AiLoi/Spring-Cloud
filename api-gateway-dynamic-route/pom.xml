@@ -38,7 +38,7 @@
         </dependency>
 
 
-        <!--zuul Api网关依赖-->
+        <!--zuul Api网关依赖 自动集成ribbon,hystrix,actuator（开启端点以开启动态刷新路由（zuul）配置文件）-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
