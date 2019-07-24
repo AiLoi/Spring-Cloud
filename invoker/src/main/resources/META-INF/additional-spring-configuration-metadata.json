@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "FIRST-SERVICE-PROVIDER.ribbon.NFLoadBlancerRuleClassName",
+      "type": "java.lang.String",
+      "description": "Description for FIRST-SERVICE-PROVIDER.ribbon.NFLoadBlancerRuleClassName."
+  }
+] }
