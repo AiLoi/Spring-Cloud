@@ -1,4 +1,4 @@
-package com.groovy.filter.pre
+package com.groovy.filters.pre
 
 import com.netflix.zuul.ZuulFilter
 import com.netflix.zuul.context.RequestContext

@@ -66,7 +66,7 @@ public class RefactorHelloController implements PersonService {
         return list;
     }
 
-    public ServiceInstance serviceInstance() {
+    private ServiceInstance serviceInstance() {
 
         List<ServiceInstance> serviceInstanceList = client.getInstances(registration.getServiceId());
 

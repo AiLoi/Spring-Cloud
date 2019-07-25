@@ -28,6 +28,9 @@ public class GroovyApplication {
         FilterLoader filterLoader = FilterLoader.getInstance();
 
         filterLoader.setCompiler(new GroovyCompiler());
+
+       // String scriptRoot = System.getProperty("zuul.filter.root","groovy/filters");
+
         try {
 
             FilterFileManager.setFilenameFilter(new GroovyFileFilter());
