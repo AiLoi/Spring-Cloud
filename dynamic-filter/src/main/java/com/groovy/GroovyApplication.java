@@ -11,9 +11,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
-import javax.annotation.PostConstruct;
-import java.io.File;
-
 @EnableZuulProxy
 @EnableConfigurationProperties({FilterConfiguration.class})
 @SpringBootApplication
@@ -37,6 +34,8 @@ public class GroovyApplication {
         try {
 
             FilterFileManager.setFilenameFilter(new GroovyFileFilter());
+
+            System.out.println(System.getProperty("user.dir"));
             FilterFileManager.init(
                     filterConfiguration.getInterval(),
                     "C:\\Users\\wsail\\IdeaProject\\spring-cloud\\groovy\\src\\main\\java\\com\\groovy\\filters\\pre"
