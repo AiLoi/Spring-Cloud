@@ -28,7 +28,7 @@ class PreFilterSecond extends ZuulFilter {
     @Override
     Object run() throws ZuulException {
 
-        logger.info("这是第二个过滤器---动态加载")
+        logger.info("这是第二个过滤器---动态加载-1")
 
         return null
     }
