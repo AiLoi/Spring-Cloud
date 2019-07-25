@@ -33,8 +33,7 @@ public class GroovyApplication {
             FilterFileManager.setFilenameFilter(new GroovyFileFilter());
             FilterFileManager.init(
                     filterConfiguration.getInterval(),
-                    filterConfiguration.getRoot()+"/pre",
-                    filterConfiguration.getRoot()+"/post"
+                    filterConfiguration.getRoot()+"/pre"
             );
 
         }catch (Exception e){
