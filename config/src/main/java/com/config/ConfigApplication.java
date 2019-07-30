@@ -2,10 +2,12 @@ package com.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 //开启分布式微服务server
 @EnableConfigServer
+@EnableDiscoveryClient
 @SpringBootApplication
 public class ConfigApplication {
 
